@@ -1,0 +1,35 @@
+<BODY BGCOLOR="#DDAD00">
+	<p ALIGN="center"> <FONT SIZE="4" COLOR="blue"><B> 회원 정보 입력 </B></FONT> </P>
+	<HR>
+	<FORM ACTION="/brain/ok" METHOD="post">
+		<TABLE WIDTH="600" HEIGH=350" BORDER="1" CELLPADDING="5" ALIGN="center">
+			<TR>	<TD> 아이디 </TD>
+				<TD> <INPUT TYPE="text" NAME="ID" SIZE="10"></TD> </TR>
+			<TR>	<TD> 비밀번호 </TD>
+				<TD> <INPUT TYPE="password" NAME="password" SIZE="10"></TD> </TR>
+			<TR>	<TD> 이름 </TD>
+				<TD> <INPUT TYPE="text" NAME="name" SIZE="10"></TD> </TR>
+			<TR>	<TD> 전화번호 </TD>
+				<TD> <INPUT TYPE="text" NAME="tel1" SIZE="3" VALUE="02"> - <INPUT NAME="tel2" SIZE="4"> -
+					<INPUT NAME="tel3" SIZE="4"> </TD> </TR>
+			<TR>	<TD> 직업 </TD>
+				<TD> <SELECT SIZE="1" NAME="job">
+					<OPTION SELECTED> 학생</OPTION>"	<OPTION> 회사원 </OPTION>
+					<OPTION> 프로그래머 </OPTION>		<OPTION> 무직 </OPTION>
+					</SELECT></TD> </TR>
+			<TR>	<TD> 성별 </TD>
+				<TD> <INPUT TYPE="radio" NAME="btn" VALUE="male" CHECKED>남자&nbsp;&nbsp;
+					<INPUT TYPE="radio" NAME="btn" VALUE="female" CHECKED>여자</TD> </TR>
+			<TR>	<TD> 취미 </TD>
+				<TD> <INPUT TYPE="checkbox" NAME="hobby" VALUE="reading">독서&nbsp;&nbsp;
+					<INPUT TYPE="checkbox" NAME="hobby" VALUE="game">게임&nbsp;&nbsp;
+					<INPUT TYPE="checkbox" NAME="hobby" VALUE="movie">영화감상&nbsp;&nbsp;
+					<INPUT TYPE="checkbox" NAME="hobby" VALUE="music">음악감상&nbsp;&nbsp;
+					<INPUT TYPE="checkbox" NAME="hobby" VALUE="soccer">축구</TD> </TR>
+			<TR> <TD> 자기 소개하는 글</TD>
+			<TD> <TEXTAREA ROWS="7" COLS="60" NAME="Intro">자기를 소개하는 글을 쓰세요
+				</textarea></TD> </TR>
+			<TR> <TD COLSPAN=2" ALIGN="center">
+				<INPUT TYPE="submit" VALUE="등록하기">&nbsp;&nbsp;
+				<INPUT TYPE="reset" VALUE="취소하기"></TD> </TR>
+		</TABLE>

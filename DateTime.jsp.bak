@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=euc-kr" pageEncoding="EUC-KR"%>
+<%@page import="java.util.GregorianCalendar" %>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+		<title>날짜와 시각</title>
+	</head>
+	<body>
+		<%
+		GregorianCalendar now=new GregorianCalendar();
+		out.println(now.get(GregorianCalendar.YEAR)+"년 ");
+		out.println(now.get(GregorianCalendar.MONTH)+"월 ");
+		out.println(now.get(GregorianCalendar.DAY_OF_MONTH)+"일 ");
+		switch(now.get(GregorianCalendar.DAY_OF_WEEK)){
+			case 1:
+				out.println("일");
+				break;
+			case 2:
+				out.println("월");
+				break;
+			case 3:
+				out.println("화");
+				break;
+			case 4:
+				out.println("수");
+				break;
+			case 5:
+				out.println("목");
+				break;
+			case 6:
+				out.println("금");
+				break;
+			case 7:
+				out.println("토");
+				break;
+			default:
+				out.println(" ");
+		}
+		out.println("요일 ");
+		if(now.get(GregorianCalendar.HOUR_OF_DAY)>12){
+			out.println("오후");}
+		else{out.println("오전");}
+		out.println(now.get(GregorianCalendar.HOUR_OF_DAY)+"시 ");
+		out.println(now.get(GregorianCalendar.MINUTE)+"분 ");
+		out.println(now.get(GregorianCalendar.SECOND)+"초 ");
+		%>
+	</body>
+</html>
